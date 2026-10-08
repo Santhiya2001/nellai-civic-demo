@@ -1,0 +1,1 @@
+import{j as e}from"./index-p_xmajoH.js";function n(){return e.jsxs("section",{className:"panel",children:[e.jsx("h2",{children:"Civic reporting"}),e.jsx("p",{children:"Issue reporting categories and complaint workflow"})]})}export{n as default};

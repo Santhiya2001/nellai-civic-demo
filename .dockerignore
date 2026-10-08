@@ -1,0 +1,13 @@
+.git
+.env
+.venv
+.tools
+runtime
+web/node_modules
+web/dist
+web/test-results
+mobile
+presentation
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache

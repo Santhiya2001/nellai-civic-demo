@@ -1,0 +1,10 @@
+export interface User { id: string; name: string; email: string | null; phone: string | null; role: string; authority_id: string | null }
+export interface Complaint { id: string; reference: string; title: string; description: string; category: string; locality: string; latitude: number; longitude: number; status: string; severity: string; image_id: string | null; user_id: string; assigned_authority: string | null; assigned_authority_id: string | null; deadline: string | null; created_at: string; escalation_level: number; resolution_description: string | null; resolution_image_id: string | null; merged_into: string | null; ai_prediction: Record<string, unknown> | null; history?: { status: string; message: string; created_at: string }[] }
+export interface Stats { total: number; open: number; resolved: number; overdue: number; escalated: number; high_severity: number; awaiting_verification: number; average_resolution_hours: number | null; trees: number; survival_rate: number | null; volunteers: number; by_category: Record<string, number>; by_status: Record<string, number>; by_month: Record<string, number>; by_locality: Record<string, number> }
+export interface Module { id: string; name: string; description: string; version: string; enabled: boolean; author: string; navigation: { label: string; path: string } }
+export interface PlatformConfig { name: string; district: string; demo_mode: boolean; categories: string[]; ai_enabled: boolean; max_upload_mb: number }
+export interface Authority { id: string; name: string; department: string }
+export interface Calendar { id: string; name: string; weekends: number[]; holidays: string[] }
+export interface Tree { id: string; species: string; latitude: number; longitude: number; planting_date: string; organization: string; status: string; maintenance_date: string | null }
+export interface Activity { id: string; title: string; description: string; category: string; locality: string; starts_at: string; capacity: number; participants: number; joined: boolean }
+export interface Notice { id: string; message: string; read: boolean; created_at: string; complaint_id: string | null }

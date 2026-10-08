@@ -1,0 +1,18 @@
+{
+  "id": "green",
+  "name": "Green Nellai",
+  "description": "Plantation records, verified land records and tree survival",
+  "version": "1.0.0",
+  "api_version": "v1",
+  "author": "Nellai community",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "dependencies": [],
+  "enabled_by_default": true,
+  "navigation": {
+    "label": "Trees",
+    "path": "green"
+  }
+}

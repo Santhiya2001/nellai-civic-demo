@@ -1,0 +1,11 @@
+[build]
+  base = "."
+  command = "npm --prefix web ci && npm --prefix web run build && node scripts/netlify-redirects.mjs"
+  publish = "web/dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Set NETLIFY_API_ORIGIN in Netlify's build environment to the hosted HTTPS
+# backend origin. scripts/netlify-redirects.mjs creates the API proxy rules.
+# Database passwords and JWT secrets belong on the backend host only.

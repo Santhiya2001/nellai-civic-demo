@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.analysis.extraPaths": ["${workspaceFolder}/backend", "${workspaceFolder}"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests", "modules"],
+  "files.exclude": {"**/__pycache__": true, "**/.pytest_cache": true, "**/.ruff_cache": true},
+  "search.exclude": {".venv": true, "web/node_modules": true, "web/dist": true, "runtime": true}
+}

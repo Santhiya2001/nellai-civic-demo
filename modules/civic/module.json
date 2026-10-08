@@ -1,0 +1,18 @@
+{
+  "id": "civic",
+  "name": "Civic reporting",
+  "description": "Issue reporting categories and complaint workflow",
+  "version": "1.0.0",
+  "api_version": "v1",
+  "author": "Nellai community",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "dependencies": [],
+  "enabled_by_default": true,
+  "navigation": {
+    "label": "Civic",
+    "path": "civic"
+  }
+}

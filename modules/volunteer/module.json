@@ -1,0 +1,18 @@
+{
+  "id": "volunteer",
+  "name": "Volunteer Nellai",
+  "description": "Community profiles and environmental activities",
+  "version": "1.0.0",
+  "api_version": "v1",
+  "author": "Nellai community",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "dependencies": [],
+  "enabled_by_default": true,
+  "navigation": {
+    "label": "Volunteers",
+    "path": "volunteer"
+  }
+}

@@ -1,0 +1,15 @@
+[tool.pytest.ini_options]
+testpaths = ["tests", "modules"]
+pythonpath = ["backend", "."]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*.py" = ["E402"]
+"tests/conftest.py" = ["E402"]

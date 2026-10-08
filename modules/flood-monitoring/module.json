@@ -1,0 +1,18 @@
+{
+  "id": "flood-monitoring",
+  "name": "Flood monitoring",
+  "description": "Example community module with manually recorded gauge readings",
+  "version": "1.0.0",
+  "api_version": "v1",
+  "author": "Nellai community",
+  "permissions": [
+    "read",
+    "write"
+  ],
+  "dependencies": [],
+  "enabled_by_default": false,
+  "navigation": {
+    "label": "Flood",
+    "path": "flood-monitoring"
+  }
+}

@@ -1,0 +1,39 @@
+name: Demo validation
+on: [push, pull_request]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: sqlite:///./runtime/ci.db
+      ENVIRONMENT: test
+      DEMO_MODE: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: backend/requirements.lock
+      - name: Generate temporary test signing key
+        run: python -c "import os,secrets; open(os.environ['GITHUB_ENV'],'a').write('JWT_SECRET='+secrets.token_urlsafe(48)+'\n')"
+      - run: pip install -r backend/requirements.lock
+      - run: python -m ruff check backend modules ai database scripts tests
+      - run: python -m alembic upgrade head
+      - run: python scripts/validate_modules.py
+      - run: python -m pytest
+      - run: python -m compileall -q backend modules ai
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
