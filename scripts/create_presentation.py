@@ -17,7 +17,7 @@ prs.slide_width = Inches(13.333)
 prs.slide_height = Inches(7.5)
 prs.core_properties.title = "Nellai Green & Civic — ME Project Demonstration"
 prs.core_properties.subject = "Modular civic and environmental management platform"
-prs.core_properties.author = "Nellai Green & Civic Project"
+prs.core_properties.author = "Santhiya M"
 GREEN = "214C36"
 DARK = "173E2B"
 CREAM = "F6F7F0"
@@ -85,7 +85,7 @@ def base(title, eyebrow="NELLAI GREEN & CIVIC", subtitle="", dark=False):
     box(slide, 0.65, 7.04, 12.03, 0.012, "50704D" if dark else "DDE5D4", rounded=False)
     txt(
         slide,
-        "ME PROJECT  /  LOCALHOST DEMONSTRATION  /  EDITABLE PRESENTATION",
+        "SANTHIYA M  /  M.E. CSE, FINAL YEAR  /  SCAD COLLEGE OF ENGINEERING & TECHNOLOGY",
         0.65,
         7.17,
         10.8,
@@ -192,7 +192,7 @@ def table(slide, headers, rows, x=0.65, y=2.5, w=12.0, h=3.5, widths=None):
     return t
 
 
-# 1 — title, entirely editable.
+# 1 — editable title and student details, with the supplied college logo.
 s = base("Nellai Green & Civic", "ME PROJECT PRESENTATION", dark=True)
 txt(
     s,
@@ -209,19 +209,17 @@ txt(s, "Report. Notify. Respond. Verify.", 0.7, 3.65, 8, 0.5, 21, "B7CB92")
 box(s, 9.8, 1.65, 2.8, 3.1, "2D573C")
 txt(s, "N", 10.42, 1.95, 1.6, 1.4, 93, "B7D28E", True, PP_ALIGN.CENTER)
 txt(s, "OUR NELLAI\nOUR RESPONSIBILITY", 10.03, 3.68, 2.33, 0.72, 13, "E1ECD2", True, PP_ALIGN.CENTER)
-txt(
-    s,
-    "M.E. Computer Science & Engineering\nWorking localhost demonstration\nTirunelveli / Nellai\nWeb application, email outbox and community modules",
-    0.7,
-    4.9,
-    11.7,
-    1.7,
-    17,
-    "DCE8CF",
-)
+txt(s, "PRESENTED BY", 0.7, 4.82, 6.8, 0.3, 12, "B7CB92", True)
+txt(s, "Santhiya M", 0.7, 5.22, 6.8, 0.55, 27, WHITE, True)
+txt(s, "Register No.: 952825405014", 0.7, 5.93, 6.8, 0.35, 17, "DCE8CF")
+txt(s, "M.E. CSE — Final Year", 0.7, 6.36, 6.8, 0.36, 17, "DCE8CF")
+box(s, 8.1, 4.96, 4.5, 1.4, WHITE)
+logo = ROOT / "presentation/assets/scad-college-logo.png"
+s.shapes.add_picture(str(logo), Inches(8.28), Inches(5.115), width=Inches(4.14))
+txt(s, "SCAD College of Engineering & Technology", 8.05, 6.51, 4.6, 0.4, 12, "DCE8CF", align=PP_ALIGN.CENTER)
 notes(
     s,
-    "Introduce yourself and your college. This localhost prototype manages complaints and sends authority alerts. Gmail accepted test NGC-063524AD on 7 October 2026; inbox arrival is checked separately. The ZIP supports a Python 3.12 setup on Windows, Linux and macOS. AI classification is a future extension.",
+    "Good morning. I am Santhiya M, register number 952825405014, a final-year M.E. Computer Science and Engineering student at SCAD College of Engineering & Technology. My project is Nellai Green & Civic. This localhost prototype manages complaints and sends authority alerts. Gmail accepted test NGC-063524AD on 7 October 2026; inbox arrival is checked separately. The ZIP supports a Python 3.12 setup on Windows, Linux and macOS. AI classification is a future extension.",
 )
 
 s = base(

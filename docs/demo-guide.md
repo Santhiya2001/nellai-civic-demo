@@ -7,7 +7,7 @@
 3. Open `runtime/DEMO_CREDENTIALS.md` privately. Do not show passwords on presentation slides.
 4. Prepare one actual, non-sensitive JPEG/PNG to demonstrate upload. Sample evidence cards are explicitly illustrative.
 5. Use separate browser profiles (normal/incognito) for citizen and staff, or sign out between roles.
-6. Open `presentation/demo-ready/Nellai_Green_Civic_Demo_Ready.pptx`. The matching PDF is your backup. The cover uses the project title; add your personal/college details if required.
+6. Open `presentation/demo-ready/Nellai_Green_Civic_Demo_Ready.pptx`. The matching PDF is your backup. The cover includes Santhiya M, register number 952825405014, M.E. CSE — Final Year, and the supplied SCAD College of Engineering & Technology logo.
 
 ## Suggested 8–10 minute demo
 
@@ -62,7 +62,9 @@ complaint and use its generated reference instead.
 
 ## Short speaking script
 
-“My project is Nellai Green & Civic, a web platform for managing civic complaints
+“Good morning. I am Santhiya M, register number 952825405014, a final-year M.E.
+Computer Science and Engineering student at SCAD College of Engineering & Technology.
+My project is Nellai Green & Civic, a web platform for managing civic complaints
 and community environmental activities. A citizen submits a report with a photo
 and location. The system assigns a configured team, sets a working-day deadline,
 and automatically creates an authority email alert. Staff record progress and

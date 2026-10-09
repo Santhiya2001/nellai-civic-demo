@@ -3,8 +3,10 @@
 Open **[demo-ready/Nellai_Green_Civic_Demo_Ready.pptx](demo-ready/Nellai_Green_Civic_Demo_Ready.pptx)**.
 The matching PDF is a backup for viewing or printing. The deck has 23 editable
 slides with speaker notes, architecture/workflow diagrams, fresh screenshots,
-email-outbox demonstration and verified test results. Personal/college details
-can be added to the cover; no invented student information is included.
+email-outbox demonstration and verified test results. The cover includes the
+provided details: **Santhiya M**, **952825405014**, **M.E. CSE — Final Year**, and
+**SCAD College of Engineering & Technology**, with the supplied college logo.
+The original logo is kept in `assets/scad-college-logo.png` for regeneration.
 
 The earlier `Nellai_Green_Civic_ME_Demo.pptx` and PDF remain on the original PC.
 The upload ZIP includes the updated `demo-ready` deck and PDF to avoid mixing versions.

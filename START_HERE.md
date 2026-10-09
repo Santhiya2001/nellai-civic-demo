@@ -27,7 +27,7 @@ Open **[runtime/DEMO_CREDENTIALS.md](runtime/DEMO_CREDENTIALS.md)** privately. I
 
 **[presentation/demo-ready/Nellai_Green_Civic_Demo_Ready.pptx](presentation/demo-ready/Nellai_Green_Civic_Demo_Ready.pptx)**
 
-There are 23 slides, editable diagrams and tables, fresh application screenshots, and speaker notes. A PDF viewing copy is in the same folder. Add your name and college to the cover if required. The earlier presentation remains in `presentation/`.
+There are 23 slides, editable diagrams and tables, fresh application screenshots, and speaker notes. The cover includes Santhiya M, register number 952825405014, M.E. CSE — Final Year, and the supplied SCAD College of Engineering & Technology logo. A PDF viewing copy is in the same folder. The earlier presentation remains in `presentation/`.
 
 ## 5. Practise the demonstration
 
